@@ -16,7 +16,7 @@ int clip(int x, int min, int max) {
 
 
 int main() {
-    const float g = 9.8;
+    const float g = 9.81;
     float mass, angle, motorTorque, eta, radius, rollingC, safetyFactor;
     int motorN, gearRatio;
     float totalTorque, availF, needF, sin_thetaMax, gradeRatio, radian_to_degree;
@@ -59,8 +59,8 @@ int main() {
     radian_to_degree = sin_thetaMax * (180 / 3.14);
 
     printf("-------- 계산 결과 --------\n");
-    printf("총 가용 견인력: %0.2f\n", availF);
-    printf("최대각: %0.2f\n", radian_to_degree);
+    printf("총 가용 견인력: %0.2fN\n", availF);
+    printf("최대각: %.2f degree\n", radian_to_degree);
     printf("등판율: %.2f\n", gradeRatio);
 
     return 0;
