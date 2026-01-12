@@ -1,2 +1,1 @@
-
-            }
+malloc(sizeof(strlen(str)))
